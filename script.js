@@ -1,7 +1,9 @@
 //your JS code here. If required.
-let ip = document.getElementByid("fname")
+//your JS code here. If required.
+let fname = document.getElementById("fname")
 
+fname.addEventListener("blur", () => {
+	let temp = fname.value.toUpperCase();
 
-ip.addEventListener("blur",()=>{
-	ip.value = ip.value.toUpperCase();
+	fname.value = temp
 })
